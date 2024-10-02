@@ -1,0 +1,313 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     background-color: #fcfcfc;
+     overflow-x: hidden;
+ }
+
+ ul {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .ms-welcome__header {
+    /* padding: 20px;
+    padding-bottom: 30px; */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ #bg-color{
+    background-color: #40a04c;
+    padding: 20px;
+    padding-bottom: 30px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+ }
+
+ .ms-font-su{
+    font-weight: 800;
+ }
+
+ .ms-font-xl{
+    color: #fcfcfc;
+    font-size: 1.2rem;
+ }
+
+ #auth-token{
+    
+ }
+
+ #auth-dialog{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    width: 100%; /* Para que ocupe el ancho completo */
+    position: relative;
+    margin-top: 30px;
+ }
+
+ .box-input{
+    margin-top: 5px;
+ }
+
+ #submitAuthToken{
+    padding: 5px 12px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    background: #40a04c;
+    color: #fcfcfc;
+    outline: 0;
+    border: 0;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 2px;
+ }
+
+ #submitAuthToken:hover{
+    background: #31833c;
+ }
+
+ #authTokenInput{
+    padding: 2px 10px;
+ }
+
+ #cancelAuthToken{
+    align-self: flex-start;
+    margin-top: 5px;
+    padding: 5px 12px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    background: #40a04c;
+    color: #fcfcfc;
+    outline: 0;
+    border: 0;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 2px;
+ }
+
+ #cancelAuthToken:hover{
+    background: #31833c;
+ }
+
+ .ms-welcome__main {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+    padding: 10px;
+ }
+ 
+ .ms-welcome__main > h2 {
+     width: 100%;
+     text-align: center;
+ }
+ 
+ .ms-welcome__features {
+     list-style-type: none;
+     margin-top: 20px;
+ }
+ 
+ .ms-welcome__features.ms-List .ms-ListItem {
+     padding-bottom: 20px;
+     display: -webkit-flex;
+     display: flex;
+ }
+ 
+ .ms-welcome__features.ms-List .ms-ListItem > .ms-Icon {
+     margin-right: 10px;
+ }
+ 
+ .ms-welcome__action.ms-Button--hero {
+     margin-top: 30px;
+ }
+ 
+.ms-Button.ms-Button--hero .ms-Button-label {
+  color: #05ac29;
+}
+
+.ms-Button.ms-Button--hero:hover .ms-Button-label,
+.ms-Button.ms-Button--hero:focus .ms-Button-label{
+  color: #0b7421;
+  cursor: pointer;
+}
+
+b {
+    font-weight: bold;
+}
+
+.box-loading{
+   height: 60px;
+}
+
+#response-token{
+   background-color: rgb(211, 211, 211);
+   border-radius: 5px;
+   padding: 5px;
+   color: #31833c;
+}
+
+.box-delete-token{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
+}
+
+#eliminar-token{
+   padding: 5px 12px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    background: #cf4545;
+    color: #fcfcfc;
+    outline: 0;
+    border: 0;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#eliminar-token:hover{
+   background: #b43c3c;
+}
+
+
+.loader {
+    width: 15px;
+    padding: 8px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #058521;
+    --_m: 
+      conic-gradient(#0000 10%,#000),
+      linear-gradient(#000 0 0) content-box;
+    -webkit-mask: var(--_m);
+            mask: var(--_m);
+    -webkit-mask-composite: source-out;
+            mask-composite: subtract;
+    animation: l3 1s infinite linear;
+  }
+  @keyframes l3 {to{transform: rotate(1turn)}}
+
+  #loading-index{
+   margin-top: 200px;
+  }
+.envios-container{
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-flex-wrap: nowrap;
+   flex-wrap: nowrap;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-flex: 1 0 0;
+   flex: 1 0 0;
+}
+
+.box-response-text{
+   margin-top: 50px;
+}
+
+#response-text{
+   color: black;
+}
+
+  /* Tabs */
+
+#tabs{
+    width: 100%;
+}
+
+.tabs-nav {
+    display: -webkit-box;
+    display: -moz-box; 
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #fcfcfc; /* Color de fondo para que destaque */
+  }
+
+  .tabs-nav li {
+    -ms-flex: 1;               /* Compatibilidad con IE 10 */
+    -webkit-flex: 1;           /* Compatibilidad con Safari 8+ */
+    flex: 1;     
+    display: inline-block;
+  }
+  
+  .tabs-nav li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+  }
+
+  a {
+    background: #eaeaed;
+    border: 1px solid #cecfd5;
+    color: #a0a0a0;
+    display: block;
+    font-weight: 600;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+  }
+  a:hover {
+    color: rgba(64, 160, 77, 0.67); /* Corresponde a #40a04dab */
+
+  }
+  .tab-active a {
+    background: #fff;
+    border-bottom-color: transparent;
+    color: #40a04c;
+    cursor: default;
+  }
+
+  /* cuerpo */
+  .tabs-stage {
+    border-top: 0;
+    clear: both;
+    padding: 24px 30px;
+    position: relative;
+  }
